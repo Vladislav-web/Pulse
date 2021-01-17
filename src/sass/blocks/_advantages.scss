@@ -1,6 +1,6 @@
 .advantages {
   background-color: #f6f6f6;;
-  padding: 70px 0;
+  padding: 50px 0;
 
   &__box {
     width: 250px;
@@ -8,12 +8,8 @@
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    &:not(:last-child) {
-      margin-right: 25px;
-    &:last-child {
-      margin: 0 auto;
-    }
-    }
+    margin: 20px;
+    
     span {
       color: $red;
       text-decoration: underline;
