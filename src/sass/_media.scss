@@ -1,0 +1,134 @@
+@media (max-width: 846px) {
+  .advantages {
+    &__box:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      margin: 0 0 20px 0;
+    }
+
+    .flex-container {
+      &__adv {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 663px) {
+
+  .header {
+    justify-content: center;
+
+    &__contacts {
+      margin: 0 auto;
+    }
+
+    &__phone {
+      margin: 0 auto;
+    }
+
+    &__official {
+      margin: 0 auto 20px;
+    }
+
+    &__logo {
+      margin: 0 auto 20px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    &__adv {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+
+  .advantages {
+    .advantages {
+      &__box {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .promo {
+    &__header {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    &__subheader {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+}
+
+@media (max-width: 460px) {
+  .promo {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__icons {
+      flex-direction: column;
+      align-items: center;
+      width: 250px;
+    }
+
+    &__icon {
+      display: block;
+      margin: 0 auto 50px;
+
+      img {
+        width: 60%;
+      }
+    }
+
+  }
+
+  .main__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .promo {
+    padding: 20px 0 60px 0;
+
+    &__header {
+      font-size: 20px;
+      margin: 0 auto;
+    }
+
+    &__subheader {
+      font-size: 14px;
+      margin: 0 auto;
+    }
+
+    &__wrapper {
+      margin: 60px 0 0 0;
+    }
+  }
+
+  .button--main {
+    width: 100%;
+    margin: 0;
+  }
+
+  .advantages {
+    padding: 40px 0;
+
+    &__img {
+      width: 70%;
+    }
+  }
+}

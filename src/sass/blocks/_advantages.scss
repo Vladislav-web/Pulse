@@ -1,0 +1,40 @@
+.advantages {
+  background-color: #f6f6f6;;
+  padding: 70px 0;
+
+  &__box {
+    width: 250px;
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    &:not(:last-child) {
+      margin-right: 25px;
+    &:last-child {
+      margin: 0 auto;
+    }
+    }
+    span {
+      color: $red;
+      text-decoration: underline;
+    }
+  }
+
+  &__img {
+    margin-bottom: 35px;
+  }
+
+  &__subtitle {
+    color: #0d0d0d;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .flex-container {
+    &__adv {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

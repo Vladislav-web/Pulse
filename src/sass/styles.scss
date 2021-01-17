@@ -1,3 +1,10 @@
-body {
-  background-color: pink;
-}
+@import 'global';
+@import 'variables';
+@import 'mixins';
+
+// !blocks
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'media';
