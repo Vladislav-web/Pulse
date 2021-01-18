@@ -1,3 +1,20 @@
+@media (max-width: 994px) {
+  .consultation {
+    &__descr {
+      text-align: center;
+    }
+  }
+
+  .main {
+    &__title {
+      &--left {
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
 @media (max-width: 915px) {
   .advantages {
     &__flex {
@@ -9,6 +26,22 @@
 @media (max-width: 700px) {
   .header {
     justify-content: center;
+  }
+
+  .consultation {
+    padding: 50px 10px;
+    &__descr {
+      font-size: 16px;
+    }
+  }
+
+  .main {
+    &__title {
+      &--left {
+        text-align: center;
+        font-size: 20px;
+      }
+    }
   }
 }
 
@@ -91,5 +124,23 @@
     &__img {
       width: 70%;
     }
+  }
+
+  .main {
+    &__title {
+      &--left {
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .consultation {
+    min-height: 600px;
+    padding: 50px 0 0;
+  }
+
+  .feed-form {
+    width: 100%;
   }
 }
