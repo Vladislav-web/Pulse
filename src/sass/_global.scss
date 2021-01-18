@@ -6,15 +6,18 @@
 .main {
   &__container {
     max-width: 950px;
-    margin: 0 auto;
     padding: 0 15px;
+    margin: 0 auto;
   }
 
   &__title {
-    color: #0d0d0d;
+    margin: 0 0 40px 0;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 40px;
+    color: #0d0d0d;
   }
 }
+
+
+

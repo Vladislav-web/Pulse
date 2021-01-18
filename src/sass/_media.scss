@@ -1,15 +1,12 @@
 @media (max-width: 915px) {
   .advantages {
-    .flex-container {
-      &__adv {
-        justify-content: center;
-      }
+    &__flex {
+      justify-content: center;
     }
   }
 }
 
 @media (max-width: 700px) {
-
   .header {
     justify-content: center;
   }
@@ -18,21 +15,20 @@
 @media (max-width: 540px) {
   .promo {
     &__header {
-      font-size: 30px;
       text-align: center;
+      font-size: 30px;
     }
 
     &__subheader {
-      font-size: 20px;
       text-align: center;
+      font-size: 20px;
     }
   }
-
 }
 
 @media (max-width: 460px) {
   .promo {
-    &__wrapper {
+    &__flex {
       flex-direction: column;
       align-items: center;
     }
@@ -64,8 +60,8 @@
     padding: 20px 0 60px 0;
 
     &__header {
-      font-size: 20px;
       margin: 0 auto;
+      font-size: 20px;
     }
 
     &__subheader {
@@ -73,14 +69,16 @@
       margin: 0 auto;
     }
 
-    &__wrapper {
+    &__flex {
       margin: 60px 0 0 0;
     }
   }
 
-  .button--main {
-    width: 100%;
-    margin: 0;
+  .button {
+    &--main {
+      margin: 0;
+      width: 100%;
+    }
   }
 
   .advantages {
