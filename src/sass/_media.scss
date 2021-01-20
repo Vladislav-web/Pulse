@@ -23,6 +23,21 @@
   }
 }
 
+
+@media (max-width: 770px) {
+  .carousel {
+    &__inner {
+      width: 100%;
+    }
+  }
+
+  .slick-slide {
+    img {
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: 700px) {
   .header {
     justify-content: center;
@@ -30,6 +45,7 @@
 
   .consultation {
     padding: 50px 10px;
+
     &__descr {
       font-size: 16px;
     }
