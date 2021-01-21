@@ -162,6 +162,26 @@
   .main__title {
     font-size: 20px;
   }
+
+  .modal {
+    padding: 20px;
+    width: 100%;
+    min-height: 370px;
+    &__subtitle {
+      font-size: 15px;
+    }
+    &__descr {
+      font-size: 13px;
+    }
+    &__close {
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  .feed-form {
+    width: 100%;
+  }
 }
 
 @media (max-width: 360px) {

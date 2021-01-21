@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //! SLIDER
   $('.carousel__inner').slick({
     speed: 1200,
     prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
@@ -12,13 +13,15 @@ $(document).ready(function () {
     }]
   });
 
+  //! CATALOG
+
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab--active)', function () {
     $(this)
       .addClass('catalog__tab--active').siblings().removeClass('catalog__tab--active')
       .closest('div.main__container').find('div.catalog__content').removeClass('catalog__content--active').eq($(this).index()).addClass('catalog__content--active');
   });
 
-  //! Oптимизированный код
+  //@ Oптимизированный код
   function toggleSlide(item) {
     $(item).each(function (i) {
       $(this).on('click', function (e) {
@@ -40,9 +43,6 @@ $(document).ready(function () {
   $('.modal__close').on('click', function () {
     $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
   });
-  // $('.button--mini').on('click', function () {
-  //   $('.overlay, #order').fadeIn('slow');
-  // });
 
   $('.button--mini').each(function (i) {
     $(this).on('click', function () {
