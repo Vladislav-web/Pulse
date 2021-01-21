@@ -53,33 +53,6 @@ $(document).ready(function () {
 
   //! Validate
 
-  // $('#order form').validate();
-  // $('#consultation-form').validate();
-  // $('#consultation form').validate({
-  //   rules: {
-  //     name: {
-  //       required: true,
-  //       minlength: 2
-  //     },
-  //     phone: "required",
-  //     email: {
-  //       required: true,
-  //       email: true
-  //     }
-  //   },
-  //   messages: {
-  //     name: {
-  //       required: "Пожалуйста, введите свое имя",
-  //       minlength: jQuery.validator.format("Введите {0} символа!")
-  //     },
-  //     phone: "Пожалуйста, введите свой номер телефона ",
-  //     email: {
-  //       required: "Пожалкйста, введите свою почту",
-  //       email: "Неправильно введен адрес почты"
-  //     }
-  //   }
-  // });
-
   function validateForms(form) {
     $(form).validate({
       rules: {
@@ -111,6 +84,8 @@ $(document).ready(function () {
   validateForms('#consultation form');
   validateForms('#order form');
 
+//! AJAX
+
   $('input[name=phone]').mask("+7 (999) 999-9999");
 
   $('form').submit(function (e) {
@@ -127,5 +102,25 @@ $(document).ready(function () {
       $('form').trigger('reset');
     });
     return false;
+  });
+
+  //! Smooth scroll and pageup
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+    } else {
+       $('.pageup').fadeOut();
+    }
+  });
+
+  $(function () {
+    $("a[href^='#']").click(function () {
+      const _href = $(this).attr("href");
+      $("html, body").animate({
+        scrollTop: $(_href).offset().top + "px"
+      });
+      return false;
+    });
   });
 });
