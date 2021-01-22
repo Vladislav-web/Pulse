@@ -24,6 +24,12 @@
 
   &__img {
     margin: 0 0 35px 0;
+    &--animated {
+      animation: hartbeat 1.5s ease infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
   }
 
   &__subtitle {
@@ -31,5 +37,4 @@
     font-weight: 700;
     color: #0d0d0d;
   }
-
 }
