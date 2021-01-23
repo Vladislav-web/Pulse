@@ -47,6 +47,7 @@
     display: none;
     justify-content: space-between;
     flex-wrap: wrap;
+
     &--active {
       display: flex;
     }
@@ -93,6 +94,7 @@
     text-decoration: underline;
     text-align: center;
     text-transform: uppercase;
+
     &:hover {
       color: $red;
     }
@@ -141,17 +143,18 @@
     padding-right: 20px;
 
     &--active {
-      transform: translateX(0%);
+      transform: translateX(0%);  
     }
-  }
+  }    
 
   &__list {
     position: relative;
-    width: 50%;
+    width: 50%; 
     transform: translateX(0%);
     padding-right: 20px;
     transition: 0.5s all;
     margin-bottom: 0;
+
     ul {
       list-style-type: none;
       padding-left: 19px;
