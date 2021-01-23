@@ -7,7 +7,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 460px;
+    max-width: 460px;
     min-height: 270px;
     background-color: $red;
     padding: 50px 60px 60px 68px;
